@@ -4,6 +4,8 @@ import Categories from '../Layouts/Categories'
 import Navbar from '../Layouts/Navbar'
 import Slider from '../Layouts/Slider'
 import Products from '../Layouts/Products'
+import NewsLetter from '../Layouts/NewsLetter'
+import Footer from '../Layouts/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Slider />
       <Categories />
       <Products />
+      <NewsLetter />
+      <Footer />
     </div>
   )
 }
