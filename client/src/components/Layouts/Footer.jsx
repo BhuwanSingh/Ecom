@@ -12,19 +12,28 @@ const Container = styled.div`
 `
 const Left = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 `
-const Logo = styled.div`
-  
-`
-const Desc = styled.div`
-  
+const Logo = styled.h1``
+const Desc = styled.p`
+  margin: 20px 0px;
 `
 const SocialContainer = styled.div`
   display: flex;
   flex-direction: row;
 `
 const SocialIcon = styled.div`
-  size: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: ${(props) => props.bg};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px
 `
 const Center = styled.div`
   flex: 1;
@@ -45,16 +54,16 @@ const Footer = () => {
           quidem placeat?
         </Desc>
         <SocialContainer>
-          <SocialIcon>
+          <SocialIcon bg="blue">
             <FacebookIcon />
           </SocialIcon>
-          <SocialIcon>
+          <SocialIcon bg="red">
             <InstagramIcon />
           </SocialIcon>
-          <SocialIcon>
+          <SocialIcon bg="lightblue">
             <TwitterIcon />
           </SocialIcon>
-          <SocialIcon>
+          <SocialIcon bg="pink">
             <PinterestIcon />
           </SocialIcon>
         </SocialContainer>
